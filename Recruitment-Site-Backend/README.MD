@@ -137,4 +137,3 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Feel free to customize this documentation further to suit your project's specific needs. It provides a starting point for contributors and users to understand and use your recruitment site backend.
