@@ -265,13 +265,14 @@ body {
 
 
 .dark {
-  --lm-bg: black;
-  --lm-bg-content: #5e5f60;
-  --lm-text: #f6f8ff;
-  --lm-text-alt: #fefefe;
-  --btn: black;
-  --btn-hover: rgb(79, 78, 78);
-
+  --lm-bg: #1B262C;
+  --lm-bg-content: #0F4C75;
+  --lm-text: #BBE1FA;
+  --lm-text-alt: #BBE1FA;
+  --btn: #3282B8;
+  --btn-hover: #BBE1FA;
+  --lm-shadow: 0px 16px 30px -10px #0f4c752f;
+  --lm-shadow-inactive: 0px 16px 30px -10px #1b262c36;
 }
 
 /* BALL ANIMATION */
