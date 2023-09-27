@@ -33,7 +33,7 @@
 
 ## Contact
 
-- [Your Name](https://github.com/arnavgupta00)
+- [Arnav Gupta](https://github.com/arnavgupta00)
 - arnavguptagg@gmail.com
 
 Feel free to reach out with any questions or feedback!
