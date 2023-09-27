@@ -5,9 +5,9 @@
 ## Issues Done 
 - **API Integration**
 - **Responsive Design**: Made it responsive For mobiles and tablets and desktops
-- Mobile : ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/def74e25-5329-409d-957e-157c14540da6)
-- Tablets : ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/39fec89b-2a62-46b3-9154-8fa62abad907)
-
+- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/def74e25-5329-409d-957e-157c14540da6)
+- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/39fec89b-2a62-46b3-9154-8fa62abad907)
+- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/7ca796e1-1b86-4b3c-93fa-cfa7b6a51438)
 - **Fixed Icons**
 - ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/8a2ca16a-a171-4c8b-9fbc-1190d7feb8b9)
 - **Loading Animation** : Simple Color change animation On clicking.
