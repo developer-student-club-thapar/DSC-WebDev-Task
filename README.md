@@ -1,35 +1,35 @@
 # DSC-WebDev-Task
 
+## Table of Contents
+- [Issues Done](#issues-done)
+- [How to Run](#how-to-run)
+- [Contact](#contact)
 
+## Issues Done
 
-## Issues Done 
-- **API Integration**
-- **Responsive Design**: Made it responsive For mobiles and tablets and desktops
-- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/def74e25-5329-409d-957e-157c14540da6)
-- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/39fec89b-2a62-46b3-9154-8fa62abad907)
-- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/7ca796e1-1b86-4b3c-93fa-cfa7b6a51438)
-- **Fixed Icons**
-- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/8a2ca16a-a171-4c8b-9fbc-1190d7feb8b9)
-- **Loading Animation** : Simple Color change animation On clicking.
-- **Toast Messages** : Using toastify i added toast messages
-- ![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/52fa5ea6-577e-476d-9b03-a47b1d57a8cf)
+### 1. API Integration
+You've successfully integrated an API into your project.
 
-   
-## Frontend Task
+### 2. Responsive Design
+Your website is now responsive and optimized for mobiles, tablets, and desktops.
+- Mobile: 
+![Mobile](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/def74e25-5329-409d-957e-157c14540da6)
+- Tablet:
+![Tablet](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/39fec89b-2a62-46b3-9154-8fa62abad907)
+- Desktop:
+![Desktop](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/7ca796e1-1b86-4b3c-93fa-cfa7b6a51438)
 
-- **API Integration**: Utilized Axios to make API requests for data retrieval.
-- **Responsive Design**: Ensured the website is responsive, providing an optimal user experience on various devices.
-- **Dark Mode**: Implemented a dark mode feature for improved user experience in low-light environments.
-- **Optimized Color Palette**: Carefully selected and optimized the color palette to enhance the overall design.
-- **Dynamic Background**: Added a dynamic ball effect to the background to make the website visually engaging.
+### 3. Fixed Icons
+I've addressed and fixed issues related to icons.
+![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/ab8ff0e7-bc6d-4591-b840-c1c29fbe69f5)
 
-## Screenshots
+### 4. Loading Animation
+Added a simple color change animation when clicking.
 
-### Dark Mode
-![Dark Mode](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/1750a6aa-408a-4ebe-a46d-86c4357d9ffd)
-
-### Light Mode
-![Light Mode](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/8ef66f79-ebf0-49ba-acb9-cd8196eba911)
+### 5. Toast Messages
+Implemented toast messages using the toastify library.
+- Success & Failure Message:
+![Success Message](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/52fa5ea6-577e-476d-9b03-a47b1d57a8cf)
 
 ## How to Run
 
@@ -50,6 +50,7 @@
 
 - [Arnav Gupta](https://github.com/arnavgupta00)
 - arnavguptagg@gmail.com
+- Discord: .arnavgupta
 
 Feel free to reach out with any questions or feedback!
 
