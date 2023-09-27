@@ -21,13 +21,13 @@
 1. Clone this repository.
 2. Open the project in your preferred code editor.
 3. Install the necessary dependencies (if any).
-   '''
+   ```
    npm install
-   '''
+   ```
 5. Start a local development server.
- '''
+   ```
    npm start
-   '''
+   ```
 7. Access the website in your browser.
 
 
