@@ -4,12 +4,11 @@ import './App.css';
 import axios from "axios";
 import moonIcon from './assets/images/moon-icon.svg';
 import sunIcon from './assets/images/sun-icon.svg';
-import locationIcon from './assets/images/location-icon.svg';
-import websiteIcon from './assets/images/website-icon.svg';
-import twitterIcon from './assets/images/twitter-icon.svg';
-import companyIcon from './assets/images/company-icon.svg';
+
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+
+
 
 
 
@@ -19,7 +18,6 @@ const App = () => {
   const [username, setUsername] = useState('');
   const [userData, setUserData] = useState(null);
   const [noResults, setNoResults] = useState(false);
-  const [search, searchText] = useState("Search");
   const handleModeToggle = () => {
     setDarkMode(!darkMode);
 
@@ -33,6 +31,7 @@ const App = () => {
   };
 
   const handleSearch = async () => {
+    
 
     try {
       const response = await axios.get(`https://api.github.com/users/${username}`);
@@ -64,7 +63,7 @@ const App = () => {
         });
     }
    
- 
+  
 
   };
 
@@ -99,7 +98,7 @@ const App = () => {
               <div className="error">
                 {noResults && <p id="no-results">no search results</p>}
               </div>
-              <button className="btn-search" style={{ backgroundColor: search === "Search" ? "var(--btn)" : "green" }} id="submit" onClick={handleSearch}>{search}</button>
+              <button className="btn-search" id="submit" onClick={handleSearch}>Search</button>
             </div>
 
             {userData && (
@@ -141,13 +140,13 @@ const App = () => {
                   <div className="profile-bottom-wrapper">
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src={locationIcon} alt="" />
+                        <img src="" alt="" />
                       </div>
                       <p id="location">{userData.location || 'Not Available'}</p>
                     </div>
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src={websiteIcon} alt="" />
+                        <img src="" alt="" />
                       </div>
                       <a href={userData.blog || '#'} id="page">
                         {userData.blog || 'Not Available'}
@@ -155,7 +154,7 @@ const App = () => {
                     </div>
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src={twitterIcon} alt="" />
+                        <img src="" alt="" />
                       </div>
                       <a href={`https://twitter.com/${userData.twitter_username}`} id="twitter">
                         {userData.twitter_username || 'Not Available'}
@@ -163,7 +162,7 @@ const App = () => {
                     </div>
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src={companyIcon} alt="" />
+                        <img src="" alt="" />
                       </div>
                       <p id="company">{userData.company || 'Not Available'}</p>
                     </div>
