@@ -14,22 +14,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 
-
-//BALL ANIMATION
-
-document.addEventListener("DOMContentLoaded", function () {
-  const rainContainer = document.querySelector(".rain");
-
-  for (let i = 0; i < 100; i++) {
-    const drop = document.createElement("div");
-    drop.className = "drop";
-    drop.style.left = Math.random() * 100 + "vw";
-    drop.style.animationDuration = Math.random() * 2 + 1 + "s";
-    rainContainer.appendChild(drop);
-  }
-});
-//BALL ANIMATION OVER
-
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [username, setUsername] = useState('');
@@ -49,9 +33,6 @@ const App = () => {
   };
 
   const handleSearch = async () => {
-    searchText("....");
-
-
 
     try {
       const response = await axios.get(`https://api.github.com/users/${username}`);
@@ -82,13 +63,8 @@ const App = () => {
         theme: "colored",
         });
     }
-    setTimeout(() => {
-      searchText("Search");
-
-
-      
-    }, 200);
-  
+   
+ 
 
   };
 
