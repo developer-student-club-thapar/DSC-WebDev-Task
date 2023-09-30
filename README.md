@@ -11,6 +11,7 @@
 Implemented toast messages using the toastify library.
 - Success & Failure Message:
 ![Success Message](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/52fa5ea6-577e-476d-9b03-a47b1d57a8cf)
+![image](https://github.com/arnavgupta00/DSC-WebDev-Task/assets/101815033/9647ffe4-71da-4b7c-a52e-a3fdeceec45a)
 
 ### API Integration
 You've successfully integrated an API into your project.
