@@ -67,7 +67,34 @@ const getUser = async (req, res) => {};
 
 const getUsers = async (req, res) => {};
 
-const deleteUser = async (req, res) => {};
+const deleteUser = async (req, res) => {
+  const { email } = req.body;
+
+  try {
+    // Find and delete the user by their email
+    const deletedUser = await User.findOneAndDelete({ email });
+
+    //Cannot find user in DB
+    if (!deletedUser) {
+      return res.status(404).json({
+        success: false,
+        status_message: "User not found",
+      });
+    }
+    //Successfully deleted user
+    return res.status(200).json({
+      success: true,
+      status_message: "User deleted successfully",
+    });
+  } catch (error) {
+    console.error("Error deleting user", error);
+
+    return res.status(500).json({
+      success: false,
+      status_message: "Internal server error",
+    });
+  }
+};
 
 module.exports = {
     regUser,
