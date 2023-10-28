@@ -4,6 +4,10 @@ import './App.css';
 import axios from "axios";
 import moonIcon from './assets/images/moon-icon.svg';
 import sunIcon from './assets/images/sun-icon.svg';
+import location from './assets/images/location-icon.svg';
+import website from './assets/images/website-icon.svg';
+import twitter from './assets/images/twitter-icon-x.svg';
+import company from './assets/images/company-icon.svg';
 
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
@@ -140,13 +144,13 @@ const App = () => {
                   <div className="profile-bottom-wrapper">
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src="" alt="" />
+                        <img src={location} alt="location" />
                       </div>
                       <p id="location">{userData.location || 'Not Available'}</p>
                     </div>
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src="" alt="" />
+                        <img src={website} alt="Website" />
                       </div>
                       <a href={userData.blog || '#'} id="page">
                         {userData.blog || 'Not Available'}
@@ -154,7 +158,7 @@ const App = () => {
                     </div>
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src="" alt="" />
+                        <img src={twitter} alt="Twitter" />
                       </div>
                       <a href={`https://twitter.com/${userData.twitter_username}`} id="twitter">
                         {userData.twitter_username || 'Not Available'}
@@ -162,7 +166,7 @@ const App = () => {
                     </div>
                     <div className="profile-info">
                       <div className="bottom-icons">
-                        <img src="" alt="" />
+                        <img src={company} alt="Company" />
                       </div>
                       <p id="company">{userData.company || 'Not Available'}</p>
                     </div>
