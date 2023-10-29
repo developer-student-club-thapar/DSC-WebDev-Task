@@ -63,9 +63,55 @@ const regUser = async (req, res) => {
     }
 };
 
-const getUser = async (req, res) => {};
+const getUser = async (req, res) => {
+    const { email } = req.body;
 
-const getUsers = async (req, res) => {};
+    try{
+
+        const user = await User.findOne({ email });
+
+        if(!user){
+            return res.status(404).json({
+                success : false,
+                status_message : "User not found"
+            })
+        }
+
+        return res.status(200).json({
+            success : true,
+            status_message : "Succesfully fetched User",
+            user 
+        })
+    }catch(error){
+        console.log(error);
+
+        res.status(500).json({
+            success : false,
+            status_message : "Internal Sever Error"
+        })
+    }
+};
+
+const getUsers = async (req, res) => {
+
+    
+    try{
+        const users = await User.find({});
+
+        return res.status(200).json({
+            success : true,
+            status_message : "Succesfully fetched Users",
+            users
+        });
+    }catch(error){
+        console.log(error);
+
+        return res.status(500).json({
+            success : false,
+            status_message : "Internal Server Error"
+        })
+    }
+};
 
 const deleteUser = async (req, res) => {
   const { email } = req.body;
