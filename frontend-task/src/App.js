@@ -20,7 +20,24 @@ const App = () => {
     setNoResults(false);
   };
 
+  //my changess
+
   const handleSearch = () => {
+    fetch(`https://api.github.com/users/${username}`)
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    return response.json();
+  })
+  .then((userData) => {
+    // Set the response to the userData state
+    // Example: this.setState({ userData: userData });
+    console.log(userData);
+  })
+  .catch((error) => {
+    console.error('There was a problem with the fetch operation:', error);
+  });
      
     // make an api call to https://api.github.com/users/${username}
     // and set the response to userData state
