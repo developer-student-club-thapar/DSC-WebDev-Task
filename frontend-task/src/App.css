@@ -76,13 +76,13 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  
+
 }
 
-.imageUrl{
+.imageUrl {
   fill: var(--btn);
-  height:15px;
-  width:15px;
+  height: 15px;
+  width: 15px;
   margin: 1vh;
   margin-right: -2vw;
 
@@ -103,7 +103,7 @@ body {
   color: var(--lm-text);
   letter-spacing: -0.5px;
   font-size: 13px;
-  
+
 }
 
 .searchbar-container img {
@@ -222,13 +222,13 @@ body {
   width: 70%;
   display: flex;
   gap: 14px;
-  margin-left: 10%;  
+  margin-left: 10%;
 }
 
 .bottom-icons {
   width: 20px;
   filter: var(--lm-icon-bg);
-  align-self:flex-start;
+  align-self: flex-start;
 }
 
 .profile-info p {
@@ -292,7 +292,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 25px;
-  background-color: var(--lm-text );
+  background-color: var(--lm-text);
   animation: fall linear infinite;
 
 }
@@ -346,6 +346,22 @@ body {
     display: flex;
     flex-direction: column;
     gap: 36px;
+  }
+
+  /*desktops*/
+  /* Solution to issue-16 */
+  @media (min-width: 1920px) {
+    .container {
+      width: 30vw;
+      position: absolute;
+      top: 20vh;
+      left: 50vw;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+
   }
 
 }
