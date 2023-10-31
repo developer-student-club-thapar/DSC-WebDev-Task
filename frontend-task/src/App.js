@@ -34,6 +34,12 @@ const App = () => {
     setNoResults(false);
   };
 
+
+     
+    // make an api call to https://api.github.com/users/${username}
+    // and set the response to userData state
+    // you may use fetch or axios
+
   const handleSearch = async () => {
     
 
@@ -67,7 +73,7 @@ const App = () => {
         });
     }
    
-  
+
 
   };
 

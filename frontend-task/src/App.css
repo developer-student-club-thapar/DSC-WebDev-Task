@@ -276,6 +276,21 @@ body {
   --lm-shadow-inactive: 0px 16px 30px -10px #1b262c36;
 }
 
+
+/* tablet */
+@media (min-width: 768px) and (max-width:1024px) {
+.container{
+background-color: var(--lm-bg);
+font-size: 18px;
+color: var(--lm-text);
+width: 60vw;
+position: relative;
+top: 50vh;
+left: 50vw;
+display: flex; /* Making it a flex container */
+flex-direction: column;
+gap: 36px;}
+
 /* BALL ANIMATION */
 .rain {
   position: fixed;
@@ -285,6 +300,7 @@ body {
   height: 100%;
   pointer-events: none;
   z-index: -1;
+
 }
 
 .drop {
