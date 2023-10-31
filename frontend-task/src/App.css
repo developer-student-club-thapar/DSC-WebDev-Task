@@ -303,6 +303,30 @@ body {
   }
 }
 
+
+.btn-search.loading {
+  background-color: #f9f2f2;
+  cursor: not-allowed;
+  color: #ebeaea;
+  font-weight: bold;
+  background-image: linear-gradient(90deg, #fbe0e0 25%, transparent 25%, transparent 50%, #d2adad 50%, #f8eeee 75%, transparent 75%, transparent);
+  background-size: 4px 4px;
+  animation: loading 1s infinite linear;
+}
+
+
+
+@keyframes loading {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 4px 0;
+  }
+}
+
+
 /* BALL ANIMATION OVER*/
 /* tablet */
 @media (max-width: 768px) and (min-width: 480px) {
@@ -334,7 +358,7 @@ body {
   }
 }
 
-/*Small Laptops*/
+/* /Small Laptops/ */
 @media (max-width: 1280px) and (min-width: 768px) {
 
   .container {
@@ -347,21 +371,20 @@ body {
     flex-direction: column;
     gap: 36px;
   }
+}
 
-  /*desktops*/
-  /* Solution to issue-16 */
-  @media (min-width: 1920px) {
-    .container {
-      width: 30vw;
-      position: absolute;
-      top: 20vh;
-      left: 50vw;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      gap: 36px;
-    }
-
+/* /desktops/ */
+/* Solution to issue-16 */
+@media (min-width: 1920px) {
+  .container {
+    width: 30vw;
+    position: absolute;
+    top: 20vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
   }
 
 }
